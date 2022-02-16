@@ -1,0 +1,38 @@
+<style>
+    .green {
+      position: relative;
+      background-color: green;
+      width: 200px;
+      height: 200px;
+    }
+  
+    .green:hover {
+      background-color: blue;
+    }
+  
+    .red {
+      position: fixed;
+      background-color: red;
+      width: 200px;
+      height: 200px;
+      opacity: 0.5;
+      z-index: 3;
+      pointer-events: none;
+    }
+  
+  </style>
+  
+  <div>
+  
+  
+  
+    <div class='red'>
+      Here we have a red div that covers the green because of the z-index but passes events through. 
+    </div>
+  
+    <div class='green'>
+      -----
+    </div>
+  
+  </div>
+  
