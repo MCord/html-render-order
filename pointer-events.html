@@ -2,8 +2,8 @@
     .green {
       position: relative;
       background-color: green;
-      width: 100vw;
-      height: 100vh;
+      width: 50vw;
+      height: 50vw;
     }
   
     .green:hover {
@@ -13,8 +13,8 @@
     .red {
       position: fixed;
       background-color: red;
-      width: 100vw;
-      height: 100vh;
+      width: 50vw;
+      height: 50vw;
       opacity: 0.5;
       z-index: 3;
       pointer-events: none;
@@ -23,15 +23,18 @@
   </style>
   
   <div>
+  Here we have a red div that covers the green because of the z-index but passes events through. 
+  </div>
+  <div>
   
   
   
     <div class='red' onClick="alert('red')">
-      Here we have a red div that covers the green because of the z-index but passes events through. 
+      RED
     </div>
   
-    <div class='green' onClick="alert('blue')">
-      This is the green div!
+    <div class='green' onClick="alert('green')">
+      GREEN
     </div>
   
   </div>
